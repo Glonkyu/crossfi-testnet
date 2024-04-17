@@ -67,7 +67,7 @@ mv $HOME/bin/crossfid $HOME/go/bin
 rm -rf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz $HOME/bin
 ```
 
-## Initialize Application
+## Initialize Node
 
 Set up the initial blockchain state.
 
@@ -208,4 +208,4 @@ crossfid tx staking create-validator \
 
 ### **Monitoring**
 
-Regularly check the logs using `journalctl` to monitor the node’s operation and catch any issues early. Keeping a close eye on your node activities and performance is crucial for maintaining a healthy validator status.
+Regularly check the logs using `journalctl -f -u crossfid` to monitor the node’s operation and catch any issues early. Keeping a close eye on your node activities and performance is crucial for maintaining a healthy validator status.
