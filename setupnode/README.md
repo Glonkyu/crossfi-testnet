@@ -206,27 +206,6 @@ crossfid tx staking create-validator \
   -y
 ```
 
-### **Create Validator**
-
-Run the following command to create your validator:
-
-```bash
-crossfid tx staking create-validator \
-  --amount 1000000mpx \
-  --from $WALLET \
-  --commission-rate 0.1 \
-  --commission-max-rate 0.2 \
-  --commission-max-change-rate 0.01 \
-  --min-self-delegation 1 \
-  --pubkey $(crossfid tendermint show-validator) \
-  --moniker "test" \
-  --identity "" \
-  --details "" \
-  --chain-id $CROSSFI_CHAIN_ID \
-  --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
-  -y
-```
-
 ### **Monitoring**
 
 Regularly check the logs using `journalctl` to monitor the node’s operation and catch any issues early. Keeping a close eye on your node activities and performance is crucial for maintaining a healthy validator status.
